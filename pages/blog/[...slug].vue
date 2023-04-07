@@ -9,7 +9,9 @@ const { data: blogPost } = await useAsyncData(`content-${path}`, () => {
 <template>
   <main>
     <div v-if="blogPost">
-      <h1 class="text-6xl">{{ blogPost.title }}</h1>
+      <h1 class="text-6xl">
+        {{ blogPost.title }}
+      </h1>
 
       <h2 class="text-4xl py-4">
         {{ blogPost.author }}
